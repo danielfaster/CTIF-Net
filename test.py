@@ -57,7 +57,7 @@ for i, dataset in enumerate(args.test_datasets):
         image_path = image_root + "/Img/"
         gt_path = image_root + "/GT/"
 
-    test_loader = test_dataset(image_path, gt_path, args.testsize, dataset, False)
+    test_loader = test_dataset(image_path, gt_path, args.testsize, dataset)
     total_test_time =0
     total_time =0
     model.eval()
