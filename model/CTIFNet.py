@@ -262,7 +262,7 @@ class CTIFNet(nn.Module):
             norm_layer=partial(nn.LayerNorm, eps=1e-6), fully_conn_output=False)
         vit_model.cuda()
         # load pre-trained model
-        print("Load pre-trained checkpoint from: %s" % args.pre_model_path)
+        print("Load pre-trained checkpoint from: %s" % args.mae_model_path)
         checkpoint = torch.load(args.mae_model_path)
         checkpoint_model = checkpoint['model']
         vit_model.load_state_dict(checkpoint_model, strict=False)
