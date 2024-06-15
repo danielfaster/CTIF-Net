@@ -62,8 +62,6 @@ for i, dataset in enumerate(args.test_datasets):
     total_time =0
     model.eval()
     for i in range(test_loader.size):
-        # if i>10 and dataset == "DUTS-TE":
-        #     break
         image_tran, gt, orignin_image, name = test_loader.load_data()
         gt = np.asarray(gt, np.float32)
         gt /= (gt.max() + 1e-8)
