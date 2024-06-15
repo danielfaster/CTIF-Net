@@ -37,7 +37,6 @@ class conv_upsample(nn.Module):
 
         return x
 
-
 # simple feature pyramid from Exploring Plain Vision Transformer Backbones for Object Detection
 class  Plain_FPN(nn.Module):
 
@@ -57,7 +56,6 @@ class  Plain_FPN(nn.Module):
         x1 = self.up_conv4(x,[b,c,4*h,4*w])
 
         return x1,x2,x3,x4
-
 
 class UNetLikeConcat(nn.Module):
     def __init__(self, channel,return_middle_layer=False):
@@ -101,7 +99,6 @@ class UNetLikeConcat(nn.Module):
             return x, x1, x2, x3, x4
         else:
             return x
-
 
 class StructureFeatureEnhancementModule(nn.Module):
     def __init__(self,channel):
@@ -202,7 +199,6 @@ class FeatureEnhancementUnit(nn.Module):
         f1_1, f1_2, f1_3, f1_4 = self.gcem(t1_1,t1_2,t1_3,t1_4, f_1, f_2, f_3, f_4)
 
         return t1_1, t1_2, t1_3, t1_4, f1_1, f1_2, f1_3, f1_4
-
 
 class Reduction(nn.Module):
     def __init__(self, in_channel, out_channel):
@@ -327,6 +323,9 @@ class CTIFNet(nn.Module):
         return y_res, y_tran
 
 
- 
+
+
+
+
 
 
