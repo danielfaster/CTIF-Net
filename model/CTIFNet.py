@@ -327,15 +327,6 @@ class CTIFNet(nn.Module):
         return y_res, y_tran
 
 
-
-
-
-def vit_large_patch16(pre_model_path="",map_location=torch.device('cpu'),**kwargs):
-
-    model = CTIFNet(vit_model, dim=embed_dim)
-
-    return model
-
-
+ 
 
 
