@@ -55,7 +55,7 @@ cd CTIF-Net
         ```
         * You can also download the pre-computed saliency maps from [Google Drive](https://drive.google.com/file/d/1245xp9yBcqysp5dJweS8o1oENOSQ_tov/view?usp=sharing) or [Baidu Pan](https://pan.baidu.com/s/1cPC-xveHlKfQ9LgR4saamQ?pwd=q2sp).
  
-## 3. Citation
+## Citation
 
 Please cite our paper if you find the work useful: 
 
